@@ -9,6 +9,14 @@
     {
       "name": "$XSAPPNAME.Admin",
       "description": "someone can perform CcdsURD on data using this scope"
+    },
+    {
+      "name": "$XSAPPNAME.Viewer",
+      "description": "Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.ADMIN",
+      "description": "ADMIN"
     }
   ],
   "attributes": [
