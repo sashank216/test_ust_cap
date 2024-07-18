@@ -42,7 +42,7 @@
 using { anubhav.db.master , anubhav.db.transaction } from '../db/datamodel';
 using { cappo.cds } from '../db/CDSViews';
  
-service CatalogService @(path: 'CatalogService'){
+service CatalogService @(path: 'CatalogService', requires: 'authenticated-user'){
     entity ProductSet as projection on master.product;
     entity BusinessPartnerSet as projection on master.businesspartner;
     entity BusinessAddress as projection on master.address ;
